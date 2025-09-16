@@ -1,0 +1,591 @@
+/* Reset și fonturi */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f9fafb;
+  color: #222;
+  line-height: 1.4;
+}
+
+/* Header negru sus */
+header {
+  background: #1a1a1a;
+  color: white;
+}
+
+/* Bara de meniu sus */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 15px;
+  font-size: 14px;
+  background: #111;
+}
+
+.topbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 8px;
+  transition: color 0.3s;
+}
+
+.topbar a:hover {
+  color: #4caf50;
+}
+
+.menu-left a {
+  font-weight: 600;
+}
+
+.menu-right a {
+  font-weight: 500;
+}
+
+.vip {
+  color: #c8b939;
+  font-weight: bold;
+}
+
+.telegram {
+  color: #00acee;
+}
+
+.vk {
+  color: #4a76a8;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.login span {
+  font-size: 18px;
+  color: #f9d71c;
+}
+
+/* Logo si descriere */
+.logo-section {
+  background: #ebf4eb;
+  padding: 15px 20px;
+  text-align: center;
+  border-bottom: 2px solid #8bc34a;
+}
+
+.logo-section h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #222;
+}
+
+.logo-section .highlight {
+  color: #8bc34a;
+  font-weight: 800;
+}
+
+.logo-section p {
+  color: #555;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+/* Butoane categorii */
+.category-buttons {
+  background: #8bc34a;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.category-buttons button {
+  background: #a3d367;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.category-buttons button:hover {
+  background: #7bb335;
+}
+
+.category-buttons .blue {
+  background: #2da8d8;
+}
+
+.category-buttons .blue:hover {
+  background: #1981b2;
+}
+
+/* Main conținut */
+main {
+  padding: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Titlu secțiune */
+.games-new h2 {
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 22px;
+  color: #333;
+}
+
+/* Grilă jocuri */
+.games-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.game-card {
+  background: white;
+  width: 180px;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgb(0 0 0 / 0.1);
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgb(0 0 0 / 0.2);
+}
+
+.game-card img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+  display: block;
+}
+
+.game-card p {
+  padding: 10px 8px;
+  font-weight: 600;
+  color: #222;
+}
+
+.game-card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Footer */
+footer {
+  background: #ebf4eb;
+  padding: 12px 20px;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  border-top: 1px solid #8bc34a;
+}
+
+/* Stil pentru paginile jocurilor */
+.download-btn {
+  display: inline-block;
+  background-color: #8bc34a;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.download-btn:hover {
+  background-color: #7bb335;
+}
+
+main.game-page {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+main.game-page h2 {
+  margin-bottom: 20px;
+}
+
+main.game-page img {
+  width: 300px;
+  max-width: 90%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+
+}
+
+main.game-page p {
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+
+
+.torrent-m {
+  width: 80px;     /* micșorează lățimea */
+  height: 80px;    /* setează și înălțimea */
+  object-fit: contain; /* păstrează proporțiile în spațiul dat */
+}
+
+
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Bara de sus */
+.topbar {
+  width: 100%;
+  background: #222;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.topbar a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* Conținut principal */
+.content {
+  display: flex;
+  max-width: 1000px;
+  background: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Stânga: coperta */
+.cover {
+  width: 250px;
+  text-align: center;
+}
+
+.cover img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.subscribe {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: orange;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.subs {
+  font-size: 14px;
+  color: gray;
+}
+
+/* Dreapta: detalii */
+.details {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.details h1 {
+  margin-top: 0;
+}
+
+.download-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 15px;
+  background: #4caf50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.download-btn:hover {
+  background: #388e3c;
+}
+
+/* Sidebar dreapta */
+.sidebar {
+  max-width: 200px;
+  background: #fff;
+  padding: 15px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+
+.game-card {
+  background: #eee;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  padding: 10px;
+  background: #222;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+
+.trailer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.trailer video {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* spațiu între imagini */
+  margin-top: 20px;
+  flex-wrap: wrap; /* imaginile se mută pe alt rând dacă ecranul e mic */
+}
+
+.gallery img {
+  width: 300px;   /* lățime mai mare */
+  height: auto;   /* păstrează proporțiile */
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  transform: scale(1.05); /* efect zoom când treci cu mouse-ul */
+
+}
+
+
+
+.descriere-joc {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #222;
+  margin-bottom: 40px;
+}
+
+.descriere-joc h2 {
+  color: #0055AA;
+  font-weight: 700;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #0055AA;
+  padding-bottom: 8px;
+}
+
+.descriere-joc h3 {
+  color: #0077CC;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.descriere-joc p {
+  margin-bottom: 18px;
+  text-align: justify;
+}
+
+
+
+.recomandari {
+  margin-top: 40px;
+}
+
+.reco-title {
+  color: red;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.reco-container {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.reco-item {
+  width: 150px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.reco-item img {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+
+.reco-item img:hover {
+  transform: scale(1.05);
+}
+
+.reco-item p {
+  margin-top: 8px;
+}
+
+
+
+.recommendations {
+  max-width: 100%;
+  margin: 20px 0;
+  padding: 10px;
+  background: rgba(255,255,255,0.02); /* schimbă după gust */
+}
+.recommendations h2 {
+  font-size: 20px;
+  margin: 8px 12px;
+  color: #0a4b7a; /* sau culoarea site-ului tău */
+}
+
+.rec-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 12px;
+  padding: 12px;
+}
+
+.rec-card {
+  display: block;
+  border-radius: 8px;
+  overflow: hidden;
+  text-decoration: none;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.rec-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.rec-card img {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+  display: block;
+}
+
+.rec-info {
+  padding: 8px 10px;
+}
+
+.rec-info h3 {
+  font-size: 15px;
+  margin: 0 0 4px 0;
+  color: #123;
+}
+
+.rec-info p {
+  font-size: 12px;
+  margin: 0;
+  color: #555;
+}
+/* Centrare butoane */
+.category-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Dropdown special pentru butonul Windows */
+.dropdown-button {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-button button {
+  background-color: #444;
+  color: white;
+  padding: 10px 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.dropdown-button button:hover {
+  background-color: #555;
+}
+
+.dropdown-button .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #666;
+  min-width: 160px;
+  z-index: 1;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.dropdown-button .dropdown-content a {
+  color: white;
+  padding: 10px 14px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-button .dropdown-content a:hover {
+  background-color: #777;
+}
+
+.dropdown-button:hover .dropdown-content {
+  display: block;
+}
+.hover-title {
+  background-color: #000; /* fundal negru */
+  color: #fff;            /* text alb */
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 0;
+  margin-top: 10px;
+  border-radius: 4px;
+  min-height: 30px;
+}
